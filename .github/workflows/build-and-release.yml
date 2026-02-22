@@ -1,5 +1,8 @@
 name: Build and Release
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
@@ -51,6 +54,11 @@ jobs:
         run: |
           cd android
           ./gradlew assembleRelease
+
+      - name: Check APK output directory
+        run: |
+          ls -la android/app/build/outputs/apk/
+          ls -la android/app/build/outputs/apk/release/
 
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/v')
