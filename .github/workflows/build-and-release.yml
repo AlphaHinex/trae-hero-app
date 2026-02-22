@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - 'v*.*.*'
+    branches:
+      - '*'
 
 jobs:
   build-android:
@@ -27,6 +29,12 @@ jobs:
       - name: Install Capacitor CLI
         run: npm install -g @capacitor/cli
 
+      - name: Install @capacitor/android package
+        run: npm install @capacitor/android
+
+      - name: Add Android platform
+        run: npx cap add android
+
       - name: Sync Android platform
         run: npx cap sync android
 
@@ -45,6 +53,7 @@ jobs:
           ./gradlew assembleRelease
 
       - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v1
         with:
           files: android/app/build/outputs/apk/release/app-release.apk
