@@ -1,0 +1,11 @@
+{
+  "appId": "com.alphahinex.wordpractice",
+  "appName": "Word Practice",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "platforms": {
+    "android": {
+      "packageName": "com.alphahinex.wordpractice"
+    }
+  }
+}

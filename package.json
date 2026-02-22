@@ -1,0 +1,22 @@
+{
+  "name": "word-practice-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cap": "npx cap"
+  },
+  "dependencies": {
+    "@capacitor/android": "^5.7.0",
+    "@capacitor/core": "^5.7.0",
+    "@capacitor/ios": "^5.7.0",
+    "@capacitor/browser": "^5.0.6"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.7.0",
+    "vite": "^5.0.8"
+  }
+}
