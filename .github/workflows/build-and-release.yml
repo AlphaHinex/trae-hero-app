@@ -70,13 +70,13 @@ jobs:
           }
 
           android {
-              namespace "com.example.wordpracticeapp"
+              namespace "com.alphahinex.wordpractice"
               compileSdk 33
 
               defaultConfig {
-                  applicationId "com.example.wordpracticeapp"
-                  minSdk 24
-                  targetSdk 33
+                  applicationId "com.alphahinex.wordpractice"
+                  minSdk 21
+                  targetSdk 29
                   versionCode 1
                   versionName "1.0"
 
