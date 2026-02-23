@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <button onclick="window.openBrowser('https://alphahinex.github.io/habit/fftq/physics')" style="padding: 15px 10px; font-size: 16px;">物理分墙</button>
         <button onclick="window.openBrowser('https://alphahinex.github.io/habit/fftq/chemistry')" style="padding: 15px 10px; font-size: 16px;">化学分墙</button>
       </div>
-      <div style="margin-top: 30px;">
+      <div style="margin-top: 10px;">
         <button onclick="window.openBrowser('https://alphahinex.github.io/word-practice/')" style="padding: 15px 20px; font-size: 16px; margin-top: 10px;">
-          背单词
+          单词练习
         </button>
       </div>
     </div>
